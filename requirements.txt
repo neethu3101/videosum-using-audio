@@ -1,0 +1,13 @@
+flask
+moviepy
+imageio
+assemblyai
+requests
+nltk
+pytextrank
+spacy
+torch
+torchvision
+torchaudio
+transformers
+SentencePiece

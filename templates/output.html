@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Video Summarization website built using HTML5, CSS3 and Javascript. The complete layout of the page is built using grid layout and flexbox"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static',filename= 'favicon.png')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='font/stylesheet.css')}}" media="screen" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" media="screen" />
+    <title>VIDEO SUMARIZATION</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="navigation">
+          <div class="logo">VIDEO SUMMARIZATION USING EXTRACTED AUDIO</div>
+          <ul>
+            <li>
+              <a href="#home"> Home </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#applications"> Applications </a>
+            </li>
+            
+         </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION HERO -->
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="heading heading--1 margin-bottom">
+             The ultimate guide for summarization
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION SEARCH -->
+      <section class="section-search">
+        <div class="container search-box">
+          <div class="form-section">
+            <h>Summary:</h>
+            <p>{{message}}
+
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION ABOUT -->
+      <section class="section-about" id="about">
+        <div class="container about-box" data-aos="fade-up">
+          <div class="about-box__heading">
+            <h3 class="color-blue margin-bottom">About us</h3>
+            <div class="heading heading--1 capitalize">
+              Save your precious time through summarization.
+            </div>
+          </div>
+          <div class="about-box__content">
+            <p class="margin-bottom">
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION APPLICATIONS -->
+      <section class="section-applications" id="applications">
+        <div class="container tour-box" data-aos="fade-up">
+          <header class="tour-box__heading">
+      
+          </header>
+
+          <article class="tour-box__cards">
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static\img\employee.jpg"
+                alt="england"
+                width="550"
+                height="600"
+                class="t-card__img"
+              />
+
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ONLINE MEETINGS</h3>
+                </div>
+
+                <div class="t-card__description">
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static/img/student.jpg"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">EDUCATIONAL VIDEOS</h3>
+                </div>
+
+                <div class="t-card__description">
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static/img/youtube.png"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">YOUTUBE VIDEOS</h3>
+                </div>
+
+                <div class="t-card__description">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static/img/easyuse.png"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">EASY TO USE</h3>
+                </div>
+
+                <div class="t-card__description">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static/img/accurate.png"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">ACCURACY</h3>
+                </div>
+
+                <div class="t-card__description">
+                  
+                </div>
+              </div>
+            </div>
+            <div class="t-card" data-aos="flip-left" data-aos-duration="1000">
+              <img
+                src="static/img\fast_1.png"
+                alt="france"
+                width="500"
+                height="500"
+                class="t-card__img"
+              />
+              <div class="t-card__content">
+                <div class="t-card__title">
+                  <h3 class="name">FAST</h3>
+                </div>
+
+                <div class="t-card__description">
+                  
+                </div>
+              </div>
+            </div>
+
+      </section>
+    </main>
+
+    <!-- SECTION FOOTER -->
+    <footer class="section-footer">
+      <div class="footer-box container">
+        <nav class="footer-nav" aria-label="navigation">
+          <div class="nav-name">Quick Links</div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <div class="legel">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="index.js"></script>
+  </body>
+</html>
