@@ -1,11 +1,6 @@
-## Turismo - Responsive Tourism Website
+## Video Summarization using Extracted Audio
 
-![](img/landing-page.png)
 
 ### About Project
+This is a Flask webapp that can summarize uploaded videos using Pegasus and TFIDF
 
-Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.
-
-### Live Demo
-
-https://turismo.netlify.app/
