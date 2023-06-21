@@ -52,9 +52,14 @@
         <div class="container search-box">
           <div class="form-section">
             <form action="{{url_for('summarize')}}" method="post" enctype="multipart/form-data">
-              <input type="file" name="file" required>
-              <input type='submit' name = "sb" value = "Summarize with TFIDF" style="background-color: #49cae4; padding: 10px;">
-              <input type='submit' name="sb" value = "Summarize with TextRank" style="background-color: #49cae4; padding: 10px;">
+              <div class="upload-section">
+                <label for="file" style="margin: 1rem;">Upload the video :</label>
+                <br>
+                <input type="file" class="custom-file-upload" name="file" required>
+                <br>
+                <input type='submit' name = "sb" value = "Summarize with TFIDF">
+                <input type='submit' name="sb" value = "Summarize with Pegasus">
+              </div>
             </form>
           </div>
         </div>

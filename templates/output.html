@@ -49,21 +49,25 @@
 
       <!-- SECTION SEARCH -->
       <section class="section-search">
-        <div class="container search-box">
-          <div class="form-section">
-            <h>Summary:</h>
-            <p>{{message}}
-
-            </p>
+          <div class="result-section">
+            <h1>ORIGINAL TRANSCRIPT:</h1>
+            <div class = "two-column">
+              <p>{{transcript}}</p>
+            </div>
+            <h1>SUMMARY:</h1>
+            <div class="two-column">
+              <p>{{message}}</p>
+              <p>Number of sentences in transcript = {{len_t}}</p>
+              <p>Number of sentences in summary = {{len_s}}</p>
+            </div>
           </div>
-        </div>
       </section>
 
       <!-- SECTION ABOUT -->
       <section class="section-about" id="about">
         <div class="container about-box" data-aos="fade-up">
           <div class="about-box__heading">
-            <h3 class="color-blue margin-bottom">About us</h3>
+            <h3 class="color-blue margin-bottom">About</h3>
             <div class="heading heading--1 capitalize">
               Save your precious time through summarization.
             </div>
