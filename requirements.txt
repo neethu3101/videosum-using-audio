@@ -4,7 +4,6 @@ imageio
 assemblyai
 requests
 nltk
-pytextrank
 spacy
 torch
 torchvision

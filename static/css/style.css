@@ -305,9 +305,44 @@ input[type='text']:focus {
   outline: none;
 }
 
+input[type=submit] {
+  background-color:#023c88;
+  border-radius: 5px;
+  border-color: #023c88;
+  color:white;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size:15px ;
+  margin: 1rem 1rem;
+  cursor: pointer;
+}
 
+.custom-file-upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
 
+.custom-file-upload::before {
+  content: 'Browse file';
+  display: inline-block;
+  background: linear-gradient(top,#023c88, #e3e3e3);
+  border: 1px solid #023c88;
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin: 1rem 1rem;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+}
 
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top,#023c88, #f9f9f9);
+}
 
 .heading {
   font-weight: 700;
@@ -371,4 +406,29 @@ input[type='text']:focus {
 }
 .search-box .btn {
   align-self: flex-end;
+}
+
+.result-section {
+  padding: 4rem;
+  margin-top: 5rem;
+  color:#023c88;
+  font-size:20px;
+  text-align:justify;
+  font-family: inherit;
+}
+.two-column{
+  height: 400px;
+  width: 1000px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 2.4rem 2.4rem 2.4rem 2.4rem;
+  border-radius: 5rem;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  font-size:15px;
+}
+h1{
+  font-family:'Montserrat-Bold';
+  font-size: 30px;
+  padding: 2.4rem;
 }
